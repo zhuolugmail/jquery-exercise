@@ -3,15 +3,17 @@ $(function () {
   let lockInitVals;
 
   $('#start').click(function () {
-    lockKeyVals = [...Array(3)].map(
+    lockKeyVals = [...Array($('input').length)].map(
       () => Math.floor(Math.random() * 10000) % 10
     );
-    lockInitVals = [...Array(3)].map(
+    lockInitVals = [...Array($('input').length)].map(
       () => Math.floor(Math.random() * 10000) % 10
     );
 
     $('#start').hide();
-    $('input').attr('value', (i, c) => lockInitVals[i]);
+    for (let i = 0; i < $('input').length; i++) {
+      $('input').eq(i).val(lockInitVals[i]);
+    }
     update();
     $('#container').show();
   });
@@ -26,14 +28,13 @@ $(function () {
       return color(val, lockKeyVals[i]);
     });
     let matches = 0;
-    for (let i = 0; i < 3; i++) {
-      console.log(i, parseInt($('input').eq(i).val()), lockKeyVals[i]);
+    for (let i = 0; i < $('input').length; i++) {
       if (parseInt($('input').eq(i).val()) === lockKeyVals[i]) {
         matches++;
       }
       console.log(matches);
     }
-    if (matches >= 3) {
+    if (matches >= $('input').length) {
       $('#info-box h3')
         .html('Lock Opened!')
         .parent()
