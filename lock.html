@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="lock.css" />
+    <title>Lock</title>
+  </head>
+  <body>
+    <h1>Welcome to Guess Lock Game</h1>
+    <button id="start">Start</button>
+    <div id="container">
+      <p>Red background means guess is too low</p>
+      <p>Blue background means guess is too high</p>
+      <div id="num-group">
+        <div class="num">
+          <input
+            type="number"
+            min="0"
+            max="9"
+            step="1"
+            value="2"
+            class="num-spinner"
+          />
+        </div>
+        <div class="num">
+          <input
+            type="number"
+            min="0"
+            max="9"
+            step="1"
+            value="2"
+            class="num-spinner"
+          />
+        </div>
+        <div class="num">
+          <input
+            type="number"
+            min="0"
+            max="9"
+            step="1"
+            value="2"
+            class="num-spinner"
+          />
+        </div>
+      </div>
+      <div id="info-box">
+        <h3>Locked</h3>
+      </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="lock.js"></script>
+  </body>
+</html>

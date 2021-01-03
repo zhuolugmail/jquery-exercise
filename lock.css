@@ -1,0 +1,101 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: black;
+}
+
+#start {
+  background-color: gray;
+  margin-top: 50px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: large;
+  color: white;
+}
+
+#container {
+  background-color: gray;
+  width: 360px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 3px;
+  padding: 30px;
+  display: none;
+}
+
+#container p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+#num-group {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  width: 170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.num {
+  background-color: green;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+}
+
+.num-spinner {
+  background: none;
+  border: none;
+  width: 30px;
+  height: 30px;
+  color: white;
+  font-size: x-large;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.num-spinner:focus {
+  outline: none;
+}
+
+#info-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 170px;
+  height: 50px;
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+    <button id="start">Start</button>
+    <div id="container">
+      <p>Red background means guess is too low</p>
+      <p>Blue background means guess is too high</p>
+      <div id="num-group">
+        <div class="num"></div>
+        <div class="num"></div>
+        <div class="num"></div>
+      </div>
+      <div id="info-box">
+        <h3>Open Lock</h3>
+      </div>
+    </div>
+    */
