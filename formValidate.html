@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="formValidate.css" />
+    <title>Form validate</title>
+  </head>
+  <body>
+    <h1>Welcome to form validate demo</h1>
+    <div>
+      <form name="myForm" id="myForm">
+        <div class="form-group">
+          <label for="first">First Name:</label>
+          <input type="text" name="first" />
+          <small>error message</small>
+        </div>
+
+        <div class="form-group">
+          <label for="last">Last Name:</label>
+          <input type="text" name="last" />
+          <small>error message</small>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="text" name="email" />
+          <small>error message</small>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" name="password" />
+          <small>error message</small>
+        </div>
+
+        <button type="button">Submit</button>
+      </form>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="formValidate.js"></script>
+  </body>
+</html>

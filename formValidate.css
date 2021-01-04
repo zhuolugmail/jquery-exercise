@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+.form-group label {
+  min-width: 100px;
+  display: inline-block;
+}
+
+.form-group {
+  margin: 20px;
+}
+
+small {
+  display: block;
+  margin-left: 100px;
+  color: red;
+}
+
+button {
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 20px;
+}
