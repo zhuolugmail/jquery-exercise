@@ -32,7 +32,6 @@ $(function () {
       if (parseInt($('input').eq(i).val()) === lockKeyVals[i]) {
         matches++;
       }
-      console.log(matches);
     }
     if (matches >= $('input').length) {
       $('#info-box h3')
